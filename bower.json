@@ -1,0 +1,25 @@
+{
+  "name": "angular-route-styles-with-route-ui",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tobalsgithub/angular-route-styles-with-route-ui",
+  "authors": [
+    "Zack Boman <tennisgent@gmail.com>",
+    "Christopher Tobin-Campbell <tobalsemail@gmail.com>"
+  ],
+  "description": "ability to have state-specific CSS stylesheets",
+  "main": "state-styles.js",
+  "keywords": [
+    "different",
+    "css",
+    "state",
+    "specific"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
