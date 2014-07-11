@@ -3,6 +3,8 @@ angular-state-files
 
 This is a simple module for AngularJS that provides the ability to have state-specific CSS stylesheets and javascript files, by integrating with Angular's `ui.router` service.
 
+Major props to Zach Boman for getting this setup for `ngRoute`. See his repository here: https://github.com/tennisgent/angular-route-styles
+
 What does it do?
 ---------------
 
