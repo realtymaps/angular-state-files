@@ -102,7 +102,7 @@ app.config(['$stateProvider','$urlRouterProvider', function ($stateProvider, $ur
 
 How does it work?
 -----------------
-###Route Setup:
+###State Setup:
 
 This config adds custom css and js properties to the object that is used to setup each page's state. That object gets passed to each `'$stateChangeStart'` event. So when listening to the `'$stateChangeStart'` event, we can grab the css property or the js property that we specified and append/remove those `<link />` or `<script>` tags as needed.
 
@@ -166,8 +166,8 @@ app.directive('head', ['$rootScope','$compile',
 
 This directive does the following things:
 
-* It compiles (using `$compile`) an html string that creates a set of <link /> tags for every item in the `scope.stateStyles` object using `ng-repeat` and `ng-href`.
-* It compiles (using `$compile`) an html string that creates a set of <script> tags for every item in the `scope.stateScripts` object using `ng-repeat` and `ng-src`.
+* It compiles (using `$compile`) an html string that creates a set of `<link />` tags for every item in the `scope.stateStyles` object using `ng-repeat` and `ng-href`.
+* It compiles (using `$compile`) an html string that creates a set of `<script>` tags for every item in the `scope.stateScripts` object using `ng-repeat` and `ng-src`.
 * It appends that compiled set of `<link />` elements and `<script>` elements to the `<head>` tag.
 * It then uses the `$rootScope` to listen for `'$stateChangeStart'` events. For every `'$stateChangeStart'` event, it grabs the "fromState" object (the state that the user is about to leave) and removes its partial-specific css file(s) and javascript file(s) from the `<head>` tag. It also grabs the "toState" object (the state that the user is about to go to) and adds any of its partial-specific css file(s) and javascript file(s) to the `<head>` tag.
 * And the `ng-repeat` part of the compiled `<link />` and `<script>` tags handles all of the adding and removing of the page-specific stylesheets and javascript files based on what gets added to or removed from the `scope.stateStyles` and `scope.stateScripts` object.
