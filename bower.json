@@ -7,7 +7,7 @@
     "Christopher Tobin-Campbell <tobalsemail@gmail.com>"
   ],
   "description": "ability to have state-specific CSS stylesheets and javascript files",
-  "main": "state-files.js",
+  "main": "./state-files.js",
   "keywords": [
     "different",
     "css",
