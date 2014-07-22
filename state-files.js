@@ -18,7 +18,7 @@ angular.module('stateFiles',[]).
 
           scope.stateStyles = {};
           scope.stateScripts = {};
-          $rootScope.$on('$stateChangeStart', function (e, toState, toParams, fromState) {
+          $rootScope.$on('$stateChangeSuccess', function (e, toState, toParams, fromState) {
             // css
             if(fromState && fromState.css){
               if(!Array.isArray(fromState.css)){
