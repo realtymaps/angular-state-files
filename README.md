@@ -1,6 +1,13 @@
 angular-state-files
 ====================
 
+Why Fork
+--------
+This fork is to support npm or better only. It will not be supporting bower, so don't ask.
+
+Why
+---
+
 This is a simple module for AngularJS that provides the ability to have state-specific CSS stylesheets and javascript files, by integrating with Angular's `ui.router` service.
 
 Major props to Zach Boman for getting this setup for `ngRoute`. See his repository here: https://github.com/tennisgent/angular-route-styles

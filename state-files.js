@@ -1,11 +1,10 @@
 /**
- * Forked from tennisgent/angular-route-styles by Christopher Tobin-Campbell on 7/10/2014
- * tobalsemail@gmail.com
+  * Forking history can be found on github
  */
 
-(function(){
+module.exports = (function(){
 
-angular.module('stateFiles',[]).
+window.angular.module('stateFiles',[]).
   directive('head', ['$rootScope','$compile',
     function($rootScope, $compile){
       return {

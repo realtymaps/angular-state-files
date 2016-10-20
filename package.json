@@ -1,0 +1,36 @@
+{
+  "name": "angular-state-files",
+  "version": "0.0.1",
+  "homepage": "https://github.com/realtymaps/angular-state-files",
+  "author": "RealtyMaps",
+  "contributors": [
+    "Zack Boman <tennisgent@gmail.com>",
+    "Christopher Tobin-Campbell <tobalsemail@gmail.com>"
+  ],
+  "description": "ability to have state-specific CSS stylesheets and javascript files",
+  "main": "./state-files.js",
+  "scripts": {
+    "test": "./node_modules/.bin/tape ./test/*.js",
+    "browserify": "mkdir -p ./tmp/browserify && browserify . -o ./tmp/browserify/bundle.js"
+  },
+  "keywords": [
+    "different",
+    "css",
+    "js",
+    "javascript",
+    "state",
+    "specific"
+  ],
+  "files": [
+    "./state-files.js"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.X"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.5.8",
+    "fake-dom": "1.X",
+    "tape": "4.X"
+  }
+}
